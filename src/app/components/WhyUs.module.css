@@ -2,6 +2,52 @@
   background: var(--white);
 }
 
+/* ── Stats band ───────────────────────────────────────── */
+.statsRow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: var(--earth);
+}
+
+.stat {
+  padding: 52px 40px;
+  border-right: 1px solid rgba(255, 255, 255, 0.07);
+  transition: background 0.3s;
+}
+.stat:last-child {
+  border-right: none;
+}
+.stat:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.statNumber {
+  font-family: var(--serif);
+  font-size: clamp(2.8rem, 4vw, 4rem);
+  font-weight: 300;
+  color: var(--white);
+  line-height: 1;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.statUnit {
+  font-size: 0.68rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-family: var(--sans);
+  margin-bottom: 4px;
+}
+
+.statLabel {
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.35);
+}
+
 /* ── Body split ───────────────────────────────────────── */
 .body {
   display: grid;
@@ -13,6 +59,11 @@
 }
 
 /* ── Left image ───────────────────────────────────────── */
+.imageWrap {
+  position: relative;
+  top: -60px; /* lifts image to overlap the stats band */
+  margin-bottom: -60px;
+}
 
 .imageAccent {
   position: absolute;
@@ -40,7 +91,7 @@
 }
 
 .pillars {
-  margin-top: 20px;
+  margin-top: 44px;
   display: flex;
   flex-direction: column;
   gap: 0;
@@ -81,4 +132,32 @@
   font-weight: 300;
   line-height: 1.75;
   color: #7a6352;
+}
+
+/* ── Responsive ───────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .statsRow { grid-template-columns: repeat(2, 1fr); }
+  .stat:nth-child(2) { border-right: none; }
+  .stat:nth-child(1),
+  .stat:nth-child(2) { border-bottom: 1px solid rgba(255,255,255,0.07); }
+  .stat:nth-child(3),
+  .stat:nth-child(4) { border-bottom: none; }
+  .body { grid-template-columns: 1fr; gap: 48px; }
+  .imageWrap { top: 0; margin-bottom: 0; max-width: 420px; }
+}
+
+@media (max-width: 768px) {
+  .statsRow { grid-template-columns: repeat(2, 1fr); }
+  .stat { padding: 32px 24px; }
+  .body { padding: 60px 24px 72px; }
+  .imageWrap { display: none; } /* hide tall portrait on small screens */
+}
+
+@media (max-width: 480px) {
+  .statsRow { grid-template-columns: repeat(2, 1fr); }
+  .stat { padding: 24px 16px; }
+  .statNumber { font-size: 2.4rem; }
+  .body { padding: 48px 16px 64px; }
+  .pillarTitle { font-size: 1rem; }
+  .pillarBody { font-size: 0.82rem; }
 }

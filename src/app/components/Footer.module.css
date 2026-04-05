@@ -82,3 +82,30 @@
 .socialLink:hover {
   color: var(--sand);
 }
+
+/* ── Responsive ───────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .top { grid-template-columns: 1fr 1fr; gap: 36px; }
+  .brand { grid-column: span 2; }
+}
+
+@media (max-width: 768px) {
+  .footer { padding: 48px 24px 28px; }
+  .top {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+  .brand { grid-column: span 2; }
+  .bottom {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer { padding: 40px 16px 24px; }
+  .top { grid-template-columns: 1fr; }
+  .brand { grid-column: span 1; }
+  .social { flex-wrap: wrap; justify-content: center; }
+}

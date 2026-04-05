@@ -34,3 +34,19 @@
   flex-wrap: wrap;
   margin-top: 36px;
 }
+
+/* ── Responsive ───────────────────────────────────────── */
+@media (max-width: 768px) {
+  .section {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 64px 24px;
+  }
+  .imageWrap { order: -1; }
+}
+
+@media (max-width: 480px) {
+  .section { padding: 52px 16px; }
+  .actions { flex-direction: column; }
+  .actions > * { text-align: center; }
+}

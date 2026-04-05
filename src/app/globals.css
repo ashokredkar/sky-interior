@@ -32,7 +32,7 @@ body {
   background: var(--white);
   color: var(--ink);
   overflow-x: hidden;
-  /* cursor: none; */
+  cursor: none;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -64,6 +64,7 @@ body {
   font-weight: 300;
   line-height: 1.8;
   color: #6b5b4a;
+  max-width: 520px;
   margin-top: 18px;
 }
 
@@ -80,7 +81,6 @@ body {
   color: white;
   cursor: none;
   transition: background 0.3s, transform 0.2s;
-  text-decoration: none;
 }
 .btnPrimary:hover {
   background: var(--clay);
@@ -99,7 +99,6 @@ body {
   color: white;
   cursor: none;
   transition: border-color 0.3s, background 0.3s;
-  text-decoration: none;
 }
 .btnGhost:hover {
   border-color: white;
@@ -118,7 +117,6 @@ body {
   color: white;
   cursor: none;
   transition: background 0.3s, transform 0.2s;
-  text-decoration: none;
 }
 .btnDark:hover {
   background: var(--earth);
@@ -137,7 +135,6 @@ body {
   color: var(--clay);
   cursor: none;
   transition: background 0.3s, color 0.3s;
-  text-decoration: none;
 }
 .btnOutlineDark:hover {
   background: var(--clay);
@@ -186,3 +183,24 @@ body {
 .stagger.visible > *:nth-child(4) { opacity:1; transform:none; transition-delay: 0.33s; }
 .stagger.visible > *:nth-child(5) { opacity:1; transform:none; transition-delay: 0.44s; }
 .stagger.visible > *:nth-child(6) { opacity:1; transform:none; transition-delay: 0.55s; }
+
+/* ── Global responsive utilities ─────────────────────── */
+
+/* Shared section padding collapses on mobile */
+@media (max-width: 768px) {
+  /* cursor: auto restores default pointer on touch devices */
+  body { cursor: auto; }
+
+  .sectionTitle { font-size: clamp(1.9rem, 7vw, 2.8rem); }
+}
+
+@media (max-width: 480px) {
+  .sectionTitle { font-size: clamp(1.7rem, 8vw, 2.4rem); }
+  .sectionBody  { font-size: 0.88rem; }
+
+  /* Buttons go full-width in stacked layouts */
+  .btnPrimary,
+  .btnGhost,
+  .btnDark,
+  .btnOutlineDark { width: 100%; text-align: center; }
+}

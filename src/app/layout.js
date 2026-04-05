@@ -1,25 +1,19 @@
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import './globals.css'
 
 export const metadata = {
-  title: "Sky Interior - Perfect Ceiling, Perfect Finish",
-  description: "",
-};
+  title: 'DesignCo — Premium Interior & Ceiling Solutions',
+  description: 'Bespoke interiors for architects and builders who demand precision, craft, and lasting elegance.',
+}
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+}
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html lang="en">
       <body>{children}</body>
     </html>
-  );
+  )
 }

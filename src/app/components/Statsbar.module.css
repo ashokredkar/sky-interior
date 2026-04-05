@@ -36,3 +36,25 @@
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.38);
 }
+
+/* ── Responsive ───────────────────────────────────────── */
+@media (max-width: 768px) {
+  .bar {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+  }
+  .stat {
+    padding: 28px 20px;
+    border-right: 1px solid rgba(255,255,255,0.08);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .stat:nth-child(2n) { border-right: none; }
+  .stat:nth-child(3),
+  .stat:nth-child(4)  { border-bottom: none; }
+  .number { font-size: 2rem; }
+}
+
+@media (max-width: 480px) {
+  .stat { padding: 22px 16px; }
+  .number { font-size: 1.8rem; }
+}

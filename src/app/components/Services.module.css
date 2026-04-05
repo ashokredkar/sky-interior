@@ -100,3 +100,35 @@
   margin-top: 4px;
   line-height: 1.5;
 }
+
+/* ── Responsive ───────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .inner { gap: 48px; }
+}
+
+@media (max-width: 768px) {
+  .section { padding: 64px 24px; }
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 52px;
+  }
+  .visual {
+    order: -1;       /* image above the list on mobile */
+    margin-top: 0;
+    max-width: 480px;
+  }
+  .badge {
+    bottom: -16px;
+    right: -12px;
+    width: 100px;
+    height: 100px;
+  }
+  .badgeNum { font-size: 1.9rem; }
+}
+
+@media (max-width: 480px) {
+  .section { padding: 52px 16px; }
+  .name { font-size: 1.2rem; }
+  .badge { width: 84px; height: 84px; }
+  .badgeNum { font-size: 1.6rem; }
+}

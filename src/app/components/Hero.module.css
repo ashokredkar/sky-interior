@@ -59,7 +59,6 @@
   color: var(--white);
   opacity: 0;
   animation: fadeUp 0.9s 0.85s var(--ease) forwards;
-  text-shadow: 4px 3px #222;
 }
 .heading em {
   font-style: italic;
@@ -132,4 +131,20 @@
   0%   { top: -100%; }
   50%  { top: 100%; }
   100% { top: 100%; }
+}
+
+/* ── Responsive ───────────────────────────────────────── */
+@media (max-width: 768px) {
+  .content {
+    padding: 0 24px 56px;
+    max-width: 100%;
+  }
+  .scrollIndicator { display: none; }
+}
+
+@media (max-width: 480px) {
+  .content { padding: 0 20px 48px; }
+  .sub { font-size: 0.9rem; }
+  .actions { flex-direction: column; gap: 12px; }
+  .actions > * { text-align: center; }
 }
