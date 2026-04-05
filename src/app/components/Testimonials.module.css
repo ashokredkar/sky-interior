@@ -1,0 +1,77 @@
+.section {
+  background: var(--earth);
+  padding: 100px 52px;
+  overflow: hidden;
+}
+
+.label {
+  color: var(--sand) !important;
+}
+
+.title {
+  color: var(--white) !important;
+}
+.title em {
+  color: var(--sand) !important;
+}
+
+.grid {
+  margin-top: 56px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.04);
+  padding: 40px 36px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  position: relative;
+  transition: background 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+.card:hover {
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.stars {
+  position: absolute;
+  top: 40px; right: 36px;
+  color: var(--accent);
+  font-size: 0.7rem;
+  letter-spacing: 3px;
+}
+
+.openQuote {
+  font-family: var(--serif);
+  font-size: 3.5rem;
+  color: var(--sand);
+  line-height: 1;
+  margin-bottom: 12px;
+  opacity: 0.45;
+}
+
+.quote {
+  font-family: var(--serif);
+  font-size: 1.08rem;
+  font-weight: 300;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.75;
+  flex: 1;
+  margin-bottom: 28px;
+}
+
+.author {
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--sand);
+}
+
+.role {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.28);
+  margin-top: 4px;
+}

@@ -1,0 +1,84 @@
+.section {
+  background: var(--white);
+}
+
+/* ── Body split ───────────────────────────────────────── */
+.body {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  gap: 80px;
+  align-items: start;
+  padding: 80px 52px 100px;
+  background: var(--stone);
+}
+
+/* ── Left image ───────────────────────────────────────── */
+
+.imageAccent {
+  position: absolute;
+  top: -16px;
+  left: -16px;
+  width: 55%;
+  height: 55%;
+  border: 1px solid var(--sand);
+  z-index: 0;
+}
+
+.img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  display: block;
+  box-shadow: 24px 24px 60px rgba(26, 19, 11, 0.18);
+}
+
+/* ── Right: heading + pillars ─────────────────────────── */
+.right {
+  padding-top: 8px;
+}
+
+.pillars {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.pillar {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  padding: 24px 0;
+  border-bottom: 1px solid rgba(139, 111, 82, 0.15);
+}
+.pillar:first-child {
+  border-top: 1px solid rgba(139, 111, 82, 0.15);
+}
+
+.pillarNum {
+  font-family: var(--serif);
+  font-size: 0.82rem;
+  font-style: italic;
+  color: var(--sand);
+  min-width: 24px;
+  padding-top: 3px;
+  flex-shrink: 0;
+}
+
+.pillarTitle {
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: var(--ink);
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+
+.pillarBody {
+  font-size: 0.84rem;
+  font-weight: 300;
+  line-height: 1.75;
+  color: #7a6352;
+}

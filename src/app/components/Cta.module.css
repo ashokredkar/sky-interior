@@ -1,0 +1,36 @@
+.section {
+  padding: 100px 52px;
+  background: var(--warm);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 72px;
+  align-items: center;
+}
+
+.imageWrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.7s var(--ease);
+}
+.imageWrap:hover .img {
+  transform: scale(1.04);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 36px;
+}

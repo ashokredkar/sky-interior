@@ -1,0 +1,102 @@
+.section {
+  background: var(--stone);
+  padding: 100px 52px;
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+/* Service list */
+.list {
+  list-style: none;
+  margin-top: 48px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 24px 0;
+  border-bottom: 1px solid rgba(139, 111, 82, 0.18);
+  cursor: none;
+  transition: padding-left 0.3s var(--ease);
+}
+.item:first-child {
+  border-top: 1px solid rgba(139, 111, 82, 0.18);
+}
+.item:hover {
+  padding-left: 12px;
+}
+
+.num {
+  font-family: var(--serif);
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--sand);
+  min-width: 28px;
+}
+
+.name {
+  font-family: var(--serif);
+  font-size: 1.4rem;
+  font-weight: 300;
+  flex: 1;
+  transition: color 0.3s;
+}
+.item:hover .name {
+  color: var(--clay);
+}
+
+.arrow {
+  color: var(--sand);
+  font-size: 1.1rem;
+  transition: transform 0.3s;
+}
+.item:hover .arrow {
+  transform: translateX(6px);
+}
+
+/* Right image */
+.visual {
+  position: relative;
+  margin-top: 24px;
+}
+
+.img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  display: block;
+}
+
+.badge {
+  position: absolute;
+  bottom: -24px; right: -24px;
+  width: 130px; height: 130px;
+  background: var(--accent);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.badgeNum {
+  font-family: var(--serif);
+  font-size: 2.5rem;
+  color: white;
+  line-height: 1;
+}
+
+.badgeLabel {
+  font-size: 0.6rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.75);
+  margin-top: 4px;
+  line-height: 1.5;
+}

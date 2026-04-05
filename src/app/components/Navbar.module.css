@@ -1,0 +1,85 @@
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 52px;
+  transition: background 0.4s, padding 0.4s, box-shadow 0.4s;
+}
+
+.nav.scrolled {
+  background: rgba(253, 250, 246, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 14px 52px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+}
+
+/* Logo */
+.logo {
+  font-family: var(--serif);
+  font-size: 1.55rem;
+  font-weight: 600;
+  color: var(--white);
+  letter-spacing: 0.04em;
+  transition: color 0.4s;
+}
+.nav.scrolled .logo {
+  color: var(--ink);
+}
+
+/* Links */
+.links {
+  display: flex;
+  gap: 36px;
+}
+.links a {
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s;
+}
+.nav.scrolled .links a {
+  color: var(--clay);
+}
+.links a::after {
+  content: '';
+  position: absolute;
+  bottom: -3px; left: 0;
+  width: 0; height: 1px;
+  background: var(--accent);
+  transition: width 0.3s var(--ease);
+}
+.links a:hover::after {
+  width: 100%;
+}
+
+/* CTA button */
+.cta {
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 10px 22px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  color: white;
+  cursor: none;
+  transition: background 0.3s, color 0.3s, border-color 0.3s;
+}
+.nav.scrolled .cta {
+  border-color: var(--clay);
+  color: var(--clay);
+}
+.cta:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: white;
+}
