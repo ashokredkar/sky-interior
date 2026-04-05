@@ -33,7 +33,7 @@ export default function Navbar() {
   return (
     <>
       <nav className={`${styles.nav} ${scrolled ? styles.scrolled : ""}`}>
-        <div className={styles.logo}>DesignCo</div>
+        <div className={styles.logo}>Sky Interior</div>
 
         {/* Desktop links */}
         <div className={styles.links}>

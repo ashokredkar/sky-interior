@@ -135,6 +135,9 @@
 
 /* ── Responsive ───────────────────────────────────────── */
 @media (max-width: 768px) {
+  .hero {
+    height: 50vh;
+  }
   .content {
     padding: 0 24px 56px;
     max-width: 100%;
