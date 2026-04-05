@@ -49,6 +49,7 @@
   margin-bottom: 20px;
   opacity: 0;
   animation: fadeUp 0.8s 0.6s var(--ease) forwards;
+  text-shadow: 2px 2px #222;
 }
 
 .heading {
@@ -59,6 +60,7 @@
   color: var(--white);
   opacity: 0;
   animation: fadeUp 0.9s 0.85s var(--ease) forwards;
+  text-shadow: 2px 2px #222;
 }
 .heading em {
   font-style: italic;
@@ -136,7 +138,7 @@
 /* ── Responsive ───────────────────────────────────────── */
 @media (max-width: 768px) {
   .hero {
-    height: 50vh;
+    height: 75vh;
   }
   .content {
     padding: 0 24px 56px;
