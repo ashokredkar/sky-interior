@@ -116,7 +116,7 @@
   width: 36px; height: 36px;
   background: transparent;
   border: 1px solid rgba(255,255,255,0.15);
-  cursor: none;
+  /*cursor: none;*/
   display: flex;
   align-items: center;
   justify-content: center;

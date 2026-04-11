@@ -244,13 +244,13 @@ export default function Projects() {
               className={`${styles.card} ${id === 0 ? styles.featured : ""}`}
             >
               <img src={src} alt={title} className={styles.img} />
-              <span className={styles.tag}>{tag}</span>
+              {/* <span className={styles.tag}>{tag}</span>
               <div className={styles.cardOverlay}>
                 <div className={styles.cardInfo}>
                   <span className={styles.cardCategory}>{category}</span>
                   <h4 className={styles.cardTitle}>{title}</h4>
                 </div>
-              </div>
+              </div> */}
             </div>
           ),
         )}

@@ -32,7 +32,7 @@ body {
   background: var(--white);
   color: var(--ink);
   overflow-x: hidden;
-  cursor: none;
+  /*cursor: none;*/
   -webkit-font-smoothing: antialiased;
 }
 
@@ -79,8 +79,9 @@ body {
   background: var(--accent);
   border: none;
   color: white;
-  cursor: none;
+  /*cursor: none;*/
   transition: background 0.3s, transform 0.2s;
+  cursor: pointer;
 }
 .btnPrimary:hover {
   background: var(--clay);
@@ -97,8 +98,9 @@ body {
   background: transparent;
   border: 1px solid rgba(255,255,255,0.5);
   color: white;
-  cursor: none;
+  /*cursor: none;*/
   transition: border-color 0.3s, background 0.3s;
+  cursor: pointer;
 }
 .btnGhost:hover {
   border-color: white;
@@ -115,8 +117,9 @@ body {
   background: var(--ink);
   border: none;
   color: white;
-  cursor: none;
+  /*cursor: none;*/
   transition: background 0.3s, transform 0.2s;
+  cursor: pointer;
 }
 .btnDark:hover {
   background: var(--earth);
@@ -133,8 +136,9 @@ body {
   background: transparent;
   border: 1px solid var(--clay);
   color: var(--clay);
-  cursor: none;
+  /*cursor: none;*/
   transition: background 0.3s, color 0.3s;
+  cursor: pointer;
 }
 .btnOutlineDark:hover {
   background: var(--clay);

@@ -2,18 +2,18 @@ import styles from "./Award.module.css";
 
 const AWARDED_WORKS = [
   {
-    title: "The Ahuja Residence",
+    title: "The Pali Hill",
     location: "Bandra West, Mumbai",
-    year: "2023",
-    image: "/images/award1.jpeg",
-    caption: "AD 100 — Residential Excellence",
+    // year: "2023",
+    image: "/images/award2.jpeg",
+    // caption: "AD 100 — Residential Excellence",
   },
   {
     title: "Skyline Corporate Hub",
     location: "BKC, Mumbai",
-    year: "2022",
-    image: "/images/award2.jpeg",
-    caption: "AD 100 — Commercial Design",
+    // year: "2022",
+    image: "/images/award1.jpeg",
+    // caption: "AD 100 — Commercial Design",
   },
 ];
 
@@ -50,9 +50,6 @@ export default function Award() {
           <div key={title} className={styles.card}>
             <div className={styles.cardImageWrap}>
               <img src={image} alt={title} className={styles.cardImage} />
-              <div className={styles.cardBadge}>
-                <span className={styles.cardBadgeText}>AD 100</span>
-              </div>
             </div>
             <div className={styles.cardBody}>
               <span className={styles.cardCaption}>{caption}</span>

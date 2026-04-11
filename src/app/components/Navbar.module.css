@@ -71,7 +71,7 @@
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.6);
   color: white;
-  cursor: none;
+  /*cursor: none;*/
   transition: background 0.3s, color 0.3s, border-color 0.3s;
 }
 .nav.scrolled .cta {
@@ -93,7 +93,7 @@
   gap: 5px;
   background: transparent;
   border: none;
-  cursor: none;
+  /*cursor: none;*/
   padding: 4px;
   z-index: 101;
 }
@@ -149,7 +149,7 @@
   background: var(--accent);
   border: none;
   color: white;
-  cursor: none;
+  /*cursor: none;*/
   margin-top: 8px;
 }
 
