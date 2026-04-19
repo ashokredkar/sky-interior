@@ -58,7 +58,8 @@
 /* Pill tag */
 .tag {
   position: absolute;
-  top: 18px; left: 18px;
+  top: 18px;
+  left: 18px;
   font-size: 0.65rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -71,7 +72,11 @@
 .cardOverlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(26, 19, 11, 0.78) 0%, transparent 55%);
+  background: linear-gradient(
+    to top,
+    rgba(26, 19, 11, 0.78) 0%,
+    transparent 55%
+  );
   opacity: 0;
   transition: opacity 0.4s;
   display: flex;
@@ -126,7 +131,8 @@
   display: none; /* hide scrollbar */
 }
 
-.imageSlider .sliderImg, .imageSlider .sliderImg img {
+.imageSlider .sliderImg,
+.imageSlider .sliderImg img {
   width: 30vw;
   aspect-ratio: 1/1;
   pointer-events: none;
@@ -141,14 +147,25 @@
 
 /* ── Responsive ───────────────────────────────────────── */
 @media (max-width: 1024px) {
-  .grid { grid-template-columns: repeat(2, 1fr); }
-  .card { cursor: default; }
-  .card.featured { grid-column: span 2; }
-  
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card {
+    cursor: default;
+  }
+  .card.featured {
+    grid-column: span 2;
+  }
 }
 
 @media (max-width: 768px) {
-  .section { padding: 64px 24px; }
+  .section {
+    padding: 64px 24px;
+  }
+  .imageSlider .sliderImg,
+  .imageSlider .sliderImg img {
+    width: 60vw;
+  }
   .header {
     flex-direction: column;
     align-items: flex-start;
@@ -159,12 +176,26 @@
     grid-template-columns: 1fr 1fr;
     gap: 2px;
   }
-  .card.featured { grid-column: span 2; }
+  .card.featured {
+    grid-column: span 2;
+  }
 }
 
 @media (max-width: 480px) {
-  .section { padding: 52px 16px; }
-  .grid { grid-template-columns: 1fr; }
-  .card.featured { grid-column: span 1; }
-  .card { aspect-ratio: 4 / 3; }
+  .section {
+    padding: 52px 16px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .card.featured {
+    grid-column: span 1;
+  }
+  .card {
+    aspect-ratio: 4 / 3;
+  }
+  .imageSlider .sliderImg,
+  .imageSlider .sliderImg img {
+    width: 80vw;
+  }
 }

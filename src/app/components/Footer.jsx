@@ -1,6 +1,6 @@
 import styles from './Footer.module.css'
 
-const COMPANY_LINKS = [{title: 'Projects', link: '#projects'}, {title: 'Awards', link: '#award'}, {title: 'About Us', link: '#why'}, {title: 'Clients', link: '#testimonials'}]
+const COMPANY_LINKS = [{title: 'Projects', link: '#projects'}, {title: 'Awards', link: '#award'}, {title: 'About Us', link: '#why'}]
 const SERVICE_LINKS = ['Interior Design', 'False Ceiling', 'Turnkey', 'Custom Furniture']
 
 export default function Footer() {

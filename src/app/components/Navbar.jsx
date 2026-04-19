@@ -7,7 +7,7 @@ const NAV_LINKS = [
   { href: "#projects", label: "Projects" },
   { href: "#award", label: "Awards" },
   { href: "#why", label: "About" },
-  { href: "#testimonials", label: "Clients" },
+  // { href: "#testimonials", label: "Clients" },
 ];
 
 export default function Navbar() {
