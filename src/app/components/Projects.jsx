@@ -138,6 +138,30 @@ const PROJECTS = [
     category: "Master Suite",
     title: "The Kapoor Retreat",
   },
+  {
+    src: "/images/23.jpeg",
+    tag: "Residential",
+    category: "Master Suite",
+    title: "The Kapoor Retreat",
+  },
+  {
+    src: "/images/24.jpeg",
+    tag: "Residential",
+    category: "Master Suite",
+    title: "The Kapoor Retreat",
+  },
+  {
+    src: "/images/25.jpeg",
+    tag: "Residential",
+    category: "Master Suite",
+    title: "The Kapoor Retreat",
+  },
+  {
+    src: "/images/26.jpeg",
+    tag: "Residential",
+    category: "Master Suite",
+    title: "The Kapoor Retreat",
+  },
 ];
 
 export default function Projects() {
