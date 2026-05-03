@@ -7,6 +7,30 @@ import { useState, useRef } from "react";
 
 const PROJECTS = [
   {
+    src: "/images/23.jpeg",
+    tag: "Residential",
+    category: "Master Suite",
+    title: "The Kapoor Retreat",
+  },
+  {
+    src: "/images/24.jpeg",
+    tag: "Residential",
+    category: "Master Suite",
+    title: "The Kapoor Retreat",
+  },
+  {
+    src: "/images/25.jpeg",
+    tag: "Residential",
+    category: "Master Suite",
+    title: "The Kapoor Retreat",
+  },
+  {
+    src: "/images/26.jpeg",
+    tag: "Residential",
+    category: "Master Suite",
+    title: "The Kapoor Retreat",
+  },
+  {
     src: "/images/1.jpeg",
     tag: "Residential",
     category: "Living Spaces",
@@ -134,30 +158,6 @@ const PROJECTS = [
   },
   {
     src: "/images/22.jpeg",
-    tag: "Residential",
-    category: "Master Suite",
-    title: "The Kapoor Retreat",
-  },
-  {
-    src: "/images/23.jpeg",
-    tag: "Residential",
-    category: "Master Suite",
-    title: "The Kapoor Retreat",
-  },
-  {
-    src: "/images/24.jpeg",
-    tag: "Residential",
-    category: "Master Suite",
-    title: "The Kapoor Retreat",
-  },
-  {
-    src: "/images/25.jpeg",
-    tag: "Residential",
-    category: "Master Suite",
-    title: "The Kapoor Retreat",
-  },
-  {
-    src: "/images/26.jpeg",
     tag: "Residential",
     category: "Master Suite",
     title: "The Kapoor Retreat",
